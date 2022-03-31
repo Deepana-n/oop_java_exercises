@@ -1,6 +1,6 @@
 package com.techreturners.cats;
 
-public class AbstractCat implements Cat {
+public abstract class AbstractCat implements Cat {
     private boolean asleep;
     private int averageHeight;
     private String setting;
@@ -31,8 +31,6 @@ public class AbstractCat implements Cat {
         return this.averageHeight;
     }
 
-    public String eat(){
-        return "";
-    }
+    public abstract String eat();
 
 }
