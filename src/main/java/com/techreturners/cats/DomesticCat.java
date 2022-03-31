@@ -1,5 +1,7 @@
 package com.techreturners.cats;
 
+import java.util.Random;
+
 public class DomesticCat extends AbstractCat {
 
     public DomesticCat() {
@@ -8,6 +10,8 @@ public class DomesticCat extends AbstractCat {
 
     @Override
     public String eat(){
-        return "Purrrrrrr";
+        String[] randomResponseArray = {"Purrrrrrr!", "Purrrrrrr! It will do I suppose"};
+        int index = new Random().nextInt(randomResponseArray.length);
+        return randomResponseArray[index];
     }
 }
