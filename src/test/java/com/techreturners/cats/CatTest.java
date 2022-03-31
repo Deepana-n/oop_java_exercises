@@ -59,14 +59,8 @@ public class CatTest {
     }
 
     @Test
-    public void feedTheCat() {
+    public void feedTheCatRandomResponse() {
         Cat domesticCat = new DomesticCat();
-        assertEquals("Purrrrrrr", domesticCat.eat());
+        assertTrue(domesticCat.eat().matches("Purrrrrrr!.*"));
     }
-
-//    @Test
-//    public void feedTheCatRandomResponse() {
-//        Cat domesticCat = new DomesticCat();
-//        assertEquals("It will do I suppose", domesticCat.eat());
-//    }
 }
