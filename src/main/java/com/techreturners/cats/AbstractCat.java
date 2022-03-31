@@ -5,8 +5,9 @@ public class AbstractCat implements Cat {
     private int averageHeight;
     private String setting;
 
-    public AbstractCat(){
+    public AbstractCat(String setting){
         this.asleep = false;
+        this.setting = setting;
     }
 
     public boolean isAsleep(){
@@ -19,5 +20,9 @@ public class AbstractCat implements Cat {
 
     public void wakeUp(){
         this.asleep = false;
+    }
+
+    public String getSetting(){
+        return this.setting;
     }
 }
