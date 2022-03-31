@@ -12,12 +12,12 @@ public class CatTest {
         assertFalse("Cat should be awake by default", domesticCat.isAsleep());
     }
 
-//    @Test
-//    public void checkCatCanGoToSleep() {
-//        Cat domesticCat = new DomesticCat();
-//        domesticCat.goToSleep();
-//        assertTrue("Cat should be snoozing", domesticCat.isAsleep());
-//    }
+    @Test
+    public void checkCatCanGoToSleep() {
+        Cat domesticCat = new DomesticCat();
+        domesticCat.goToSleep();
+        assertTrue("Cat should be snoozing", domesticCat.isAsleep());
+    }
 //
 //    @Test
 //    public void checkCatCanWakep() {
