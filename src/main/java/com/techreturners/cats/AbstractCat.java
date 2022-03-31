@@ -12,4 +12,8 @@ public class AbstractCat implements Cat {
     public boolean isAsleep(){
         return this.asleep;
     }
+
+    public void goToSleep(){
+        this.asleep = true;
+    }
 }
