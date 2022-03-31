@@ -63,4 +63,10 @@ public class CatTest {
         Cat domesticCat = new DomesticCat();
         assertEquals("Purrrrrrr", domesticCat.eat());
     }
+
+//    @Test
+//    public void feedTheCatRandomResponse() {
+//        Cat domesticCat = new DomesticCat();
+//        assertEquals("It will do I suppose", domesticCat.eat());
+//    }
 }

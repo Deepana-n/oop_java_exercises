@@ -4,13 +4,11 @@ public class AbstractCat implements Cat {
     private boolean asleep;
     private int averageHeight;
     private String setting;
-    private String eat;
 
-    public AbstractCat(String setting,int averageHeight,String eat){
+    public AbstractCat(String setting,int averageHeight){
         this.asleep = false;
         this.setting = setting;
         this.averageHeight = averageHeight;
-        this.eat = eat;
     }
 
     public boolean isAsleep(){
@@ -34,7 +32,7 @@ public class AbstractCat implements Cat {
     }
 
     public String eat(){
-        return this.eat;
+        return "";
     }
 
 }
