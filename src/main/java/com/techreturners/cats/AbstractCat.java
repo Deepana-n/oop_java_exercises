@@ -5,9 +5,10 @@ public class AbstractCat implements Cat {
     private int averageHeight;
     private String setting;
 
-    public AbstractCat(String setting){
+    public AbstractCat(String setting,int averageHeight){
         this.asleep = false;
         this.setting = setting;
+        this.averageHeight = averageHeight;
     }
 
     public boolean isAsleep(){
@@ -24,5 +25,9 @@ public class AbstractCat implements Cat {
 
     public String getSetting(){
         return this.setting;
+    }
+
+    public int getAverageHeight(){
+        return this.averageHeight;
     }
 }
