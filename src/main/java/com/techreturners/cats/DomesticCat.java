@@ -10,7 +10,7 @@ public class DomesticCat extends AbstractCat {
 
     @Override
     public String eat(){
-        String[] randomResponseArray = {"Purrrrrrr!", "Purrrrrrr! It will do I suppose"};
+        String[] randomResponseArray = {"Purrrrrrr", "Purrrrrrr It will do I suppose"};
         int index = new Random().nextInt(randomResponseArray.length);
         return randomResponseArray[index];
     }

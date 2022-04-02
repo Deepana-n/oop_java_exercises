@@ -59,8 +59,26 @@ public class CatTest {
     }
 
     @Test
-    public void feedTheCatRandomResponse() {
+    public void feedTheCatBothResponseRightRandomResponse() {
         Cat domesticCat = new DomesticCat();
-        assertTrue(domesticCat.eat().matches("Purrrrrrr!.*"));
+        assertTrue("Purrrrrrr".equals(domesticCat.eat()) || "Purrrrrrr It will do I suppose".equals(domesticCat.eat()));
+    }
+
+    @Test
+    public void feedTheCat1stResponseWrongRandomResponse() {
+        Cat domesticCat = new DomesticCat();
+        assertFalse("Purrrrrrr 12345".equals(domesticCat.eat()) && "Purrrrrrr It will do I suppose".equals(domesticCat.eat()));
+    }
+
+    @Test
+    public void feedTheCat2ndResponseWrongRandomResponse() {
+        Cat domesticCat = new DomesticCat();
+        assertFalse("Purrrrrrr".equals(domesticCat.eat()) && "Purrrrrrr It will do".equals(domesticCat.eat()));
+    }
+
+    @Test
+    public void feedTheCatBothResponseWrongRandomResponse() {
+        Cat domesticCat = new DomesticCat();
+        assertFalse("Purrrrrrr 12345".equals(domesticCat.eat()) && "Purrrrrrr It will do".equals(domesticCat.eat()));
     }
 }
